@@ -1,3 +1,6 @@
+
+@import 'modern-normalize';
+
 :root {
     --main-color: #212121;
     --accent-color: #2196f3;
@@ -182,32 +185,6 @@ a {
     margin-right: 30px;
 }
 
-/* ---------- Work ---------- */
-
-.work {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-}
-
-.work h2 {
-    font-weight: bold;
-    font-size: 36px;
-    line-height: 1.17;
-    letter-spacing: 0.03em;
-    text-align: center;
-    margin-top: 95px;
-}
-
-.work-list {
-    display: flex;
-    justify-content: center;
-}
-
-.work-list li {
-    margin-right: 30px;
-    justify-content: center;
-}
 
 /* ---------- Team ---------- */
 
@@ -261,54 +238,6 @@ a {
     color: var(--text-color);
 }
 
-/* ---------- Footer ---------- */
-
-.footer {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    text-align: left;
-    height: 250px;
-    align-items: center;
-    background-color: var(--background);
-    color: var(--title-color);
-}
-
-.footer>a {
-    font-family: Raleway;
-    font-style: normal;
-    font-weight: bold;
-    font-size: 26px;
-    line-height: 1.2;
-    letter-spacing: 0.03em;
-    padding-right: 1020px;
-    margin-top: 10px;
-}
-
-/* ----------- Contact ---------- */
-
-address {
-    font-style: normal;
-    font-weight: normal;
-    font-size: 14px;
-    line-height: 2.1;
-    letter-spacing: 0.03em;
-    padding-right: 990px;
-}
-
-.address-link:hover {
-    color: var(--accent-color);
-}
-
-.address-contact {
-    color: rgba(255, 255, 255, 0.6);
-}
-
-.address-contact:hover,
-.address-contact:focus {
-    color: var(--accent-color);
-}
-
 /* ---------- Portfolio ---------- */
 
 .hr {
@@ -318,18 +247,6 @@ address {
     align-items: center;
 }
 
-/* ---------- Galery ---------- */
-
-.gallery-projects {
-    align-items: center;
-    justify-content: center;
-    width: 1170px;
-    margin: 75px auto 0 auto;
-}
-
-.gallery-projects h1 {
-    display: none;
-}
 
 /* ---------- Main ---------- */
 
@@ -367,48 +284,85 @@ address {
     filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
 }
 
-/* ---------- Examples ---------- */
+/* ---------- Projects ---------- */
 
 .projects {
     display: flex;
     flex-wrap: wrap;
+    gap: 20px;
     justify-content: center;
+    margin: 20;
+}
+
+.projects-list {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 300px;
+    margin: 100px;
 }
 
 .projects li {
+    display: flex;
     flex-direction: column;
-    justify-content: center;
-    box-sizing: border-box;
-    max-width: 370px;
-    max-height: 404px;
+    justify-content: left;
+    width: 360px;
+    height: 368px;
+    margin: 20px;
+    background-color: var(--title-color);
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
 
-    border-style: solid;
-    border-width: 1px;
-    border-color: #eeeeee;
+}
+h2 
+    font-weight: bold;
+    font-size: 36px;
+    line-height: 1.17;
+    letter-spacing: 0.03em;
+    text-align: center;
+    margin-top: 95px;
+
+.projects h2 {
+    font-weight: bold;
+    font-size: 36px;
+    line-height: 1.17;
+    letter-spacing: 0.03em;
+    text-align: left;
+    margin-top: 95px;
+}
+
+.projects p {
+    font-size: 16px;
+    line-height: 1.2;
+    text-align: left;
+    letter-spacing: 0.03em;
+    color: var(--text-color);
 }
 
 .projects li:hover,
 .projects li:focus {
     box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
-        1px 4px 6px rgba(0, 0, 0, 0.16);
+                1px 4px 6px rgba(0, 0, 0, 0.16);
 }
 
-.project-title {
-    font-weight: bold;
-    font-size: 18px;
-    line-height: 2;
-    letter-spacing: 0.06em;
+
+/* ---------- Footer ---------- */
+
+.footer {
+    display: flex;
+    flex-direction: column;
+    justify-content: left;
     text-align: left;
-    color: var(--main-color);
-    padding-left: 20px;
+    height: 250px;
+    align-items: center;
+    background-color: var(--background);
+    color: var(--title-color);
 }
 
-.project-desc {
+.footer-text {
     font-size: 16px;
-    line-height: 1.9;
-    letter-spacing: 0.03em;
-    text-align: left;
-    color: var(--text-color);
-    padding-left: 20px;
-    margin-top: -10px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 24px;
+    letter-spacing: 0.32px;
+    padding-right: 156px;
 }
