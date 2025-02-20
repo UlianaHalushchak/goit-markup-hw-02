@@ -18,16 +18,20 @@ body {
     color: var(--main-color);
 }
 
+.container {
+    width: 100%;
+    max-width: 1480px;
+}
+
 /* ---------- Header ---------- */
 
 .header {
-    display: flex;
+    display: inline-flex;
     justify-content: center;
     align-items: center;
     height: 80px;
     margin: 0 auto;
 
-    display: inline-flex;
     align-items: flex-start;
     gap: 40px;
     font-weight: 400;
@@ -38,33 +42,20 @@ body {
 }
 
 .header a {
-    font-family: Raleway;
-    font-style: normal;
-    font-weight: 500;ss
-    font-size: 16px;
-    line-height: 1.14em;
-    letter-spacing: 0.02em;
     color: var(--main-color);
 }
 
 .logo {
-    display: flex;
+    display: inline-flex;
     justify-content: center;
     align-items: center;
-    font-weight: 700;
-    font-size: 18px;
-    color: var(--accent-color);
-    width: 115px;
 }
 
-.logo2 {
-    display: flex;
-    justify-content: center;
+.logo img {
     align-items: center;
-    font-weight: 700;
-    font-size: 18px;
-    color: var(--text-color);
+    flex-shrink: 0;
     width: 115px;
+    margin: 15px;
 }
 
 /* --- Main --- */
@@ -339,18 +330,27 @@ a {
         1px 4px 6px rgba(0, 0, 0, 0.16);
 }
 
-/* ---------- Footer ---------- */
+/* ---------- Footer ------- */
+
 
 .footer {
     display: flex;
     flex-direction: column;
-    padding: 95px 75px;
+    padding: 45px 25px;
     justify-content: left;
     text-align: left;
     height: 250px;
     align-items: left;
     background-color: var(--background);
     color: var(--title-color);
+    position: relative;
+}
+
+.footer .logo {
+    justify-content: left;
+    top: 65px;
+    left: 156;
+    margin-left: 100px; /* Adjust this value to position the logo properly */
 }
 
 .footer-text {
@@ -361,4 +361,5 @@ a {
     letter-spacing: 0.32px;
     padding-right: 156px;
     width: 464px;
+    margin-left: 120px; /* Adjust this value to position the text properly */
 }
