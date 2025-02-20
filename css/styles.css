@@ -375,10 +375,11 @@ a {
 .footer {
     display: flex;
     flex-direction: column;
+    padding: 95px 75px;
     justify-content: left;
     text-align: left;
     height: 250px;
-    align-items: center;
+    align-items: left;
     background-color: var(--background);
     color: var(--title-color);
 }
@@ -390,4 +391,5 @@ a {
     line-height: 24px;
     letter-spacing: 0.32px;
     padding-right: 156px;
+    width: 464px;
 }
