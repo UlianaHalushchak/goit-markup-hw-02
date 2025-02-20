@@ -284,57 +284,6 @@ a {
     filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
 }
 
-/* ---------- Projects ---.work-list {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 20px;
-    justify-content: center;
-    margin: 20;
-}
-
-.work-list-list {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 300px;
-    margin: 100px;
-}
-
-.work-list li {
-    display: flex;
-    flex-direction: column;
-    justify-content: left;
-    width: 360px;
-    height: 368px;
-    margin: 20px;
-    background-color: var(--title-color);
-    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
-
-
-    .work-list h2 {
-        font-weight: bold;
-        font-size: 36px;
-        line-height: 1.17;
-        letter-spacing: 0.03em;
-        text-align: left;
-        margin-top: 95px;
-    }
-
-    .work-list p {
-        font-size: 16px;
-        line-height: 1.2;
-        text-align: left;
-        letter-spacing: 0.03em;
-        color: var(--text-color);
-    }
-
-    .work-list li:hover,
-    .work-list li:focus {
-        box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
-            1px 4px 6px rgba(0, 0, 0, 0.16);
-    }
-    }------- */
-
 /* ---------- Work ---------- */
 .work {
     display: flex;
